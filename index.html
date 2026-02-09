@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brangkas Misterius - Ucapan Ulang Tahun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Halaman Brangkas -->
+    <div id="safe-page" class="page active">
+        <div class="container">
+            <div class="header">
+                <h1><i class="fas fa-lock"></i> Brangkas Misterius</h1>
+                <p class="subtitle">brangkas Misterius, dibuat oleh iki khusus untuk abang .</p>
+            </div>
+            
+            <div class="safe-container">
+                <div class="safe">
+                    <div class="safe-door">
+                        <div class="safe-handle"></div>
+                        <div class="safe-lock">
+                            <div class="lock-circle">
+                                <div class="lock-numbers">
+                                    <span>?</span>
+                                    <span>?</span>
+                                    <span>?</span>
+                                    <span>?</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="safe-display">
+                            <div id="code-display">____</div>
+                            <div class="attempts">Masukkan 4 digit kode</div>
+                        </div>
+                    </div>
+                    <div class="safe-body"></div>
+                </div>
+                
+                <div class="keypad-container">
+                    <div class="instructions">
+                        <p><i class="fas fa-key"></i> Tebak kombinasi 4 digit yang benar untuk membuka brangkas</p>
+                        <p><i class="fas fa-lightbulb"></i> nih clue nya artiin
+                        ..--- ----- ----- .....
+                        </p>
+                    </div>
+                    
+                    <div class="keypad">
+                        <div class="keypad-row">
+                            <button class="keypad-btn" data-number="1">1</button>
+                            <button class="keypad-btn" data-number="2">2</button>
+                            <button class="keypad-btn" data-number="3">3</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn" data-number="4">4</button>
+                            <button class="keypad-btn" data-number="5">5</button>
+                            <button class="keypad-btn" data-number="6">6</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn" data-number="7">7</button>
+                            <button class="keypad-btn" data-number="8">8</button>
+                            <button class="keypad-btn" data-number="9">9</button>
+                        </div>
+                        <div class="keypad-row">
+                            <button class="keypad-btn" id="clear-btn"><i class="fas fa-backspace"></i></button>
+                            <button class="keypad-btn" data-number="0">0</button>
+                            <button class="keypad-btn" id="enter-btn"><i class="fas fa-key"></i> Buka</button>
+                        </div>
+                    </div>
+                    
+                    <div class="message" id="message"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Efek kembang api di background -->
+        <div class="fireworks-container">
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+        </div>
+    </div>
+    
+    <!-- Halaman Ucapan Ulang Tahun -->
+    <div id="birthday-page" class="page">
+        <div class="birthday-container">
+            <!-- Balon -->
+            <div class="balloon balloon1"></div>
+            <div class="balloon balloon2"></div>
+            <div class="balloon balloon3"></div>
+            <div class="balloon balloon4"></div>
+            <div class="balloon balloon5"></div>
+            <div class="balloon balloon6"></div>
+            <div class="balloon balloon7"></div>
+            <div class="balloon balloon8"></div>
+            <div class="balloon balloon9"></div>
+            <div class="balloon balloon10"></div>
+            
+            <!-- Konfeti -->
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            
+            <!-- Kembang Api -->
+            <div class="firework-burst"></div>
+            <div class="firework-burst"></div>
+            <div class="firework-burst"></div>
+            <div class="firework-burst"></div>
+            <div class="firework-burst"></div>
+            
+            <!-- Bintang Berkelap-kelip -->
+            <div class="twinkle-star"></div>
+            <div class="twinkle-star"></div>
+            <div class="twinkle-star"></div>
+            <div class="twinkle-star"></div>
+            <div class="twinkle-star"></div>
+            
+            <!-- Konten Utama -->
+            <div class="birthday-content">
+                <div class="success-animation">
+                    <div class="confetti-explosion"></div>
+                    <div class="success-icon">
+                        <i class="fas fa-unlock"></i>
+                    </div>
+                </div>
+                
+                <h1 class="birthday-title"><i class="fas fa-birthday-cake"></i> Selamat! Brangkas Terbuka! <i class="fas fa-birthday-cake"></i></h1>
+                
+                <div class="birthday-message">
+                    <div class="message-section">
+                        <h2 class="greeting">HAPPY  BIRTHDAY</h2>
+                        <p class="message-text">Abang carry, selamat ulang tahun ke-21.
+tiba" udh 21 aja waktu emg cepet bgt padahal dlu masih berduan aja apa" berdua sekarang dh punya urusan masing" jujur semua perkataan yang abang kasih semuanya bener tapi iki malah anggap remeh dan sekarang" baru menyadari dari kata" itu walaupun iki dulu tetep ngeyel karena ya pemikiran iki dlu blom sampe situ sekarang ya mungkin udah sampe, semoga aja abang di sono menjalani hidup yang lebih baik lagi.</p>
+                        
+                        <div class="highlight-text">
+                            <h3>HAPPY BIRTHDAY!</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="photo-frame">
+                        <div class="photo">
+                            <!-- Ganti URL gambar di bawah dengan foto yang diinginkan -->
+                            <img src="IMG-20260206-WA0001.jpg" alt="Foto Ulang Tahun">
+                            <div class="photo-decoration"></div>
+                            <div class="photo-sparkle"></div>
+                        </div>
+                        <div class="photo-caption">
+                            <p><i class="fas fa-heart"></i> it's you now <i class="fas fa-heart"></i></p>
+                        </div>
+                    </div>
+                    
+                    <div class="wishes">
+                        <p><i class="fas fa-gift"></i> Semoga panjang umur dan sehat selalu</p>
+                        <p><i class="fas fa-gift"></i> semoga mendapatkan hidup yang sesuai yang abang inginkan</p>
+                        <p><i class="fas fa-gift"></i> dimudahkan dalam segala hal yang dikerjakan</p>
+                        <p><i class="fas fa-gift"></i> Dikelilingi orang" baik yang gk ada niatan buruk ke abang</p>
+                    </div>
+                    
+                    <div class="cake-container">
+                        <div class="cake">
+                            <div class="cake-top"></div>
+                            <div class="cake-middle"></div>
+                            <div class="cake-bottom"></div>
+                            <div class="candle"></div>
+                            <div class="flame"></div>
+                        </div>
+                        <div class="cake-sparkles"></div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button id="back-btn" class="action-btn"><i class="fas fa-lock"></i> Kunci Brangkas Kembali</button>
+                        <button id="music-btn" class="action-btn"><i class="fas fa-play"></i> Putar Musik</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-note">
+                <p>Dibuat sama iki dan ai  <i class="fas fa-heart"></i> untuk merayakan ulang tahun abang carry yang ke 21 | <span id="success-code"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio untuk musik latar -->
+    <audio id="birthday-music" loop>
+        <source src="Kenangan Terindah_musicaldown.com_1770140158.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    
+    <!-- Audio untuk efek suara -->
+    <audio id="success-sound">
+        <source src="" type="audio/mpeg">
+    </audio>
+    <audio id="click-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="error-sound">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-wrong-answer-fail-notification-946.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+                                      </html>
